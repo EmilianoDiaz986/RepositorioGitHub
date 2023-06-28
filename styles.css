@@ -1,0 +1,54 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+  }
+  
+  h1 {
+    text-align: center;
+  }
+  
+  form {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .form-row {
+    width: calc(50% - 10px);
+    margin-bottom: 10px;
+  }
+  
+  label {
+    display: block;
+  }
+  
+  input {
+    width: 100%;
+    padding: 5px;
+  }
+  
+  .error {
+    color: red;
+    margin-top: 5px;
+  }
+  
+  button {
+    display: block;
+    margin: 20px auto;
+  }
+  
+  /* Estilos responsive */
+  @media screen and (max-width: 600px) {
+    form {
+      flex-direction: column;
+    }
+  
+    .form-row {
+      width: 100%;
+    }
+  }
+  

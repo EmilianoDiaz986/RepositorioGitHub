@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Mi Página</title>
+  <style>
+    /* Estilos CSS para el cuerpo de la página */
+    body {
+      background-color: #E8E8E8 ; /* Color de fondo gris */
+      margin: 0;
+      padding: 0;
+    }
+
+    /* Estilos CSS para la barra de navegación */
+    .navbar {
+      background-color: #FFFFFF;
+      color: #fff;
+      padding: 10px;
+      display: flex;
+      justify-content: center;
+      margin: 10px;
+    }
+
+    .navbar ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    .navbar li {
+      display: inline;
+      margin-right: 10px;
+    }
+
+    .navbar li:not(:last-child):after {
+      content: "|";
+      margin-left: 10px;
+      color: #000; /* Color de la línea de separación */
+    }
+
+    .navbar li a {
+      color: #0088BA; /* Color de los elementos del navbar */
+      text-decoration: none;
+    }
+
+    /* Estilos CSS para la foto de portada */
+    .cover-photo {
+      width: 300px; /* Ancho deseado */
+      height: auto; /* Altura automática proporcional al ancho */
+      max-width: 100%;
+      object-fit: cover;
+      display: block;
+      margin: 0;
+    }
+
+    /* Estilos CSS para el contenedor del texto */
+    .navbar-text-container {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      font-size: 14px;
+      margin-top: -35px;
+      margin-right: 60px;
+      color: #0088BA;
+    }
+.cover-photo2 {
+width: 600px;
+  height: 400px;
+
+}
+.navbar-text-container2 {
+  text-align: left;
+  width: 600px; /* Ajusta el ancho deseado del contenedor */
+  margin: 0 auto; /* Centra horizontalmente el contenedor */
+}
+
+.navbar-text2 {
+  text-align: left;
+}
+
+  </style>
+</head>
+<body>
+  <img class="cover-photo" src="https://www.pagina12.com.ar/assets/media/logos/amp/logo_pagina_12_n.svg?v=2.0.126" alt="Foto de portada">
+
+  <div class="navbar">
+    <ul>
+      <li><a href="#">El pais</a></li>
+      <li><a href="#">Economia</a></li>
+      <li><a href="#">Sociedad</a></li>
+      <li><a href="#">Espectaculos</a></li>
+      <li><a href="#">Deportes</a></li>
+      <li><a href="#">El mundo</a></li>
+      <li><a href="#">Ciencia</a></li>
+    </ul>
+  </div>
+
+  <div class="navbar-text-container">
+    <div class="navbar-text">
+      Hoy: Especiales de P12 | NO | Buenos Aires12
+    </div>
+  </div>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Formulario</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <h1 id="form-title">HOLA</h1>
+  <form id="my-form">
+    <div class="form-row">
+      <label for="nombre">Nombre completo:</label>
+      <input type="text" id="nombre" name="nombre" required>
+      <div class="error" id="nombre-error"></div>
+    </div>
+    <div class="form-row">
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+      <div class="error" id="email-error"></div>
+    </div>
+    <div class="form-row">
+      <label for="password">Contraseña:</label>
+      <input type="password" id="password" name="password" required>
+      <div class="error" id="password-error"></div>
+    </div>
+    <div class="form-row">
+      <label for="confirm-password">Repetir contraseña:</label>
+      <input type="password" id="confirm-password" name="confirm-password" required>
+      <div class="error" id="confirm-password-error"></div>
+    </div>
+    <div class="form-row">
+      <label for="edad">Edad:</label>
+      <input type="number" id="edad" name="edad" required>
+      <div class="error" id="edad-error"></div>
+    </div>
+    <div class="form-row">
+      <label for="telefono">Teléfono:</label>
+      <input type="text" id="telefono" name="telefono" required>
+      <div class="error" id="telefono-error"></div>
+    </div>
+    <div class="form-row">
+      <label for="direccion">Dirección:</label>
+      <input type="text" id="direccion" name="direccion" required>
+      <div class="error" id="direccion-error"></div>
+    </div>
+    <div class="form-row">
+      <label for="ciudad">Ciudad:</label>
+      <input type="text" id="ciudad" name="ciudad" required>
+      <div class="error" id="ciudad-error"></div>
+    </div>
+    <div class="form-row">
+      <label for="codigo-postal">Código Postal:</label>
+      <input type="text" id="codigo-postal" name="codigo-postal" required>
+      <div class="error" id="codigo-postal-error"></div>
+    </div>
+    <div class="form-row">
+      <label for="dni">DNI:</label>
+      <input type="text" id="dni" name="dni" required>
+      <div class="error" id="dni-error"></div>
+    </div>
+    <button type="submit" id="submit-btn">Enviar</button>
+  </form>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
